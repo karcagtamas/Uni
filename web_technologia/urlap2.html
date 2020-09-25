@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Űrlap</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <form method="GET" action="http://xenia.sze.hu/~wajzy/html/urlap2.php">
+        <h1>Jűrmű konfigurátor</h1>
+        <div>
+            <h2>Extrák</h2>
+            <select name="extra" multiple size="10">
+                <optgroup label="biztonság">
+                    <option value="led">Led fényszorók</option>
+                    <option value="szel-fu">Első szélvédő fűtés</option>
+                </optgroup>
+                <optgroup label="Kényelem">
+                    <option value="fu-ul">Fűthető ülések</option>
+                    <option value="fu-kor">Fűthető kormánykerék</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <h2>Szín</h2>
+            <select name="szin">
+                <option value="f">Fehér</option>
+                <option value="k">Fekete</option>
+                <option value="r" selected>Vörös</option>
+                <option value="b">Kék</option>
+                <option value="y">Sárga</option>
+            </select>
+        </div>
+        <div>
+            <h2>Fényezés típusa</h2>
+            <div>
+                <input type="radio" name="feny-tip" value="norm" checked /> Normál
+            </div>
+            <div>
+
+                <input type="radio" name="feny-tip" value="metal" /> Metál
+            </div>
+            <div>
+                <input type="radio" name="feny-tip" value="gyongy" /> Gyöngyház
+            </div>
+        </div>
+        <div>
+            <h2>Egyéb szolgáltatások</h2>
+            <div>
+                <input name="egyeb" type="checkbox" value="norm" /> Casco kötés
+            </div>
+            <div>
+
+                <input name="egyeb" type="checkbox" value="metal" /> Hitel
+            </div>
+            <div>
+                <input name="egyeb" type="checkbox" value="gyongy" /> Mobilitás garancia
+            </div>
+        </div>
+        <div>
+            <h2>Egyéb kérdés</h2>
+            <textarea name="kerdes" placeholder="Forduljon hozzák bizalommal!" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <h2>Elérhetőségei ahol ajánlatainkkal kereshetjük</h2>
+            <div>
+                <label>Tel:
+
+                    <input name="tel" type="tel" />
+                </label>
+            </div>
+            <div>
+                <label>Email:
+
+                    <input name="email" type="email" />
+                </label>
+            </div>
+        </div>
+        <button type="submit">Küldés</button>
+    </form>
+</body>
+
+</html>

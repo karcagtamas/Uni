@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Űrlap</title>
+</head>
+
+<body>
+    <form action="http://xenia.sze.hu/~wajzy/feldolgozo.php" method="POST">
+        <div>
+            <label for="name"><b>N</b>év:
+                <input id="name" name="n_nev" type="text" maxlength="64" placeholder="Név" /></label>
+        </div>
+        <div>
+            <label for="age"><b>É</b>letkor: <input id="age" name="n_eletkor" type="number" min="0" max="120"
+                    required /></label>
+        </div>
+        <div>
+            <label for="lang">Nyelvvizsga:
+                <select id="lang" multiple name="n_nyelv">
+                    <optgroup label="Angol">
+                        <option value="aa">Alap</option>
+                        <option value="ak" selected>Közép</option>
+                        <option value="af">Felső</option>
+                    </optgroup>
+                    <optgroup label="Német">
+                        <option value="na">Alap</option>
+                        <option value="nk">Közép</option>
+                        <option value="nf">Felső</option>
+                    </optgroup>
+                </select></label>
+        </div>
+        <fieldset>
+            <legend>Legmagasabb iskolai végzettség</legend>
+            <div>
+                <label for="iskola-alt">
+                    <input id="iskola-alt" name="n_iskola" type="radio" value="altalanos" />
+                    Álalános iskola
+                </label>
+            </div>
+            <div>
+                <label for="iskola-gim-koz">
+                    <input id="iskola-gim-koz" name="n_iskola" type="radio" value="gim/koz" checked />
+                    Gimnázium/Középiskola
+                </label>
+            </div>
+            <div>
+                <label for="iskola-fo-egy">
+                    <input id="iskola-fo-egy" name="n_iskola" type="radio" value="fo/egy" />
+                    Főiskola/Egyetem
+                </label>
+            </div>
+            <div>
+                <label for="iskola-tud">
+                    <input id="iskola-tud" name="n_iskola" type="radio" value="tudomany" />
+                    Tudományos fokozat
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Jelölje hobbyját!</legend>
+            <div>
+                <label for="hobby-fozes">
+                    <input id="hobby-fozes" name="n_fozes" type="checkbox" />
+                    Főzés
+                </label>
+            </div>
+            <div>
+                <label for="hobby-kerekpar">
+                    <input id="hobby-kerekpar" name="n_bicikli" type="checkbox" />
+                    Kerékpár
+                </label>
+            </div>
+            <div>
+                <label for="hobby-olvas">
+                    <input id="hobby-olvas" name="n_konyv" type="checkbox" />
+                    Olvasás
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Rövid bemutatkozás</legend>
+            <div>
+                <label for="bemutat">
+                    <textarea id="bemutat" name="n_bemutatkozas" cols="40"
+                        rows="10">sdaf asdf asd fsad fas df asdf asd </textarea>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Önéletrajz felöltése</legend>
+            <div>
+                <label for="fajl">
+                    <input id="fajl" name="n_cv[]" type="file" multiple />
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Küldés</button>
+        </div>
+        <div>
+            <button type="reset">Alaphelyzet</button>
+        </div>
+    </form>
+</body>
+
+</html>
