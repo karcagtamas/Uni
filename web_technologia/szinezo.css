@@ -1,0 +1,27 @@
+h1 {
+    color: brown;
+}
+
+h2, h3 {
+    color: blue;
+}
+
+#voros {
+    color: red;
+}
+
+#zold {
+    color: green;   
+}
+
+#vz {
+    color: lightgreen;
+}
+
+.szurke {
+    color:gray;
+}
+
+.hatter {
+    background-color: yellow;
+}

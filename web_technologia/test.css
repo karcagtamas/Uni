@@ -1,0 +1,95 @@
+.box {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2;
+
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.box .post {
+    border: 2px solid #2AA1B1;
+    border-radius: 4px 20px;
+    padding: 1rem;
+    margin: 3rem;
+    background-color: antiquewhite;
+    box-shadow: 0 0 8px 2px #2AA1B1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .post div:first-child {
+    background-color: lightcoral;
+    padding: 0.2rem 1.8rem;
+    border-radius: 4px 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: max-content;
+}
+
+.box .post div:nth-child(2) {
+    background-color: lightgoldenrodyellow;
+    padding: 2rem;
+    border-radius: 4px 20px;
+    font-weight: bold;
+    text-align: justify;
+    min-height: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .post div:last-child {
+    background-color: lightblue;
+    padding: 0.2rem 1.8rem;
+    border-radius: 4px 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.box .post:nth-child(even) {
+    grid-column: 2;
+
+}
+
+.box .post .footer .date {
+    font-style: italic;
+    margin-left: 1rem;
+}
+
+button {
+    border-radius: 4px 20px;
+    padding: 0.2rem 0.8rem;
+    transition-duration: 0.5s;
+}
+
+.box .post .footer button.reply {
+    border: 1px solid #2AA1B1;
+    background-color: #2AA1B166;
+}
+
+.box .post .footer button.like {
+    border: 1px solid #b12a2a;
+    background-color: #b12a2a66;
+}
+
+.box .post .footer button:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+.box .post .footer button.reply:hover {
+    background-color: #2AA1B133;
+}
+
+.box .post .footer button.like:hover {
+    background-color: #b12a2a99;
+}
+
+button:focus {
+    outline: none;
+}
