@@ -1,0 +1,82 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 180%;
+}
+
+h2 {
+font-size: 150%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tartalom {
+    border: 1px solid gray;
+    background-color: rgb(240, 240, 240);
+    width: max-content;
+    padding-right: 20px;
+}
+
+.tartalom h2 {
+    text-align: center;
+}
+
+.tartalom ol {
+    padding-left: 20px;
+    list-style-type: none;
+    counter-reset: list;
+}
+
+.tartalom li::before {
+    counter-increment: list;
+    content: counters(list, ".") " ";
+}
+
+code, pre {
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+code {
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+
+pre {
+    padding: 1rem;
+}
+
+.property, .element, .keyword {
+    color: green;
+}
+
+.id {
+    color: blue;
+}
+
+.unit, .string {
+    color: red;
+}
+
+.quantity {
+    color: gray;
+}
