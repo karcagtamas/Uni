@@ -39,7 +39,12 @@ unsigned int Hero::getDamage()
         return this->specDPS;
     }
 
-    return ((rand() % (this->maxDPS - this->minDPS)) + this->minDPS) * this->precision;
+    if (this->maxDPS == this->minDPS)
+    {
+        return this->precision * this->maxDPS;
+    }
+
+    return this->precision * ((rand() % (this->maxDPS - this->minDPS)) + this->minDPS);
 }
 
 void Hero::printAsWinner()
