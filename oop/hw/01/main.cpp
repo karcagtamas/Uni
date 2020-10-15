@@ -9,6 +9,7 @@ int main()
 {
     std::vector<Hero *> heroes;
     std::ifstream myfile("/home/karcagtamas/repos/Uni/oop/hw/01/heores.csv");
+    srand(time(NULL));
 
     if (myfile.is_open())
     {

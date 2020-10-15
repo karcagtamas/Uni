@@ -17,6 +17,7 @@ void Hero::print()
 Hero *Hero::hit(Hero *attacked)
 {
     const unsigned int damage = this->getDamage();
+    std::cout << this->name << " attack by " << damage << std::endl;
     if (damage < attacked->hp)
     {
         attacked->hp -= damage;
@@ -31,13 +32,14 @@ Hero *Hero::hit(Hero *attacked)
 
 unsigned int Hero::getDamage()
 {
-    unsigned int spec = rand() * 100;
+
+    unsigned int spec = rand() % 100;
     if (spec < 5)
     {
         return this->specDPS;
     }
 
-    return ((rand() * (this->maxDPS - this->minDPS)) + this->minDPS) * this->precision;
+    return ((rand() % (this->maxDPS - this->minDPS)) + this->minDPS) * this->precision;
 }
 
 void Hero::printAsWinner()
