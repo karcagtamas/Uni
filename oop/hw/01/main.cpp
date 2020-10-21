@@ -49,5 +49,10 @@ int main()
 
     heroes[first - 1]->hit(heroes[second - 1])->printAsWinner();
 
+    for (unsigned int i = 0; i < heroes.size(); i++)
+    {
+        delete heroes[i];
+    }
+
     return 0;
 }
