@@ -13,6 +13,8 @@ private:
 
     void display();
     void simulate();
+    void determineNextStatus();
+    void commitNextStatus();
 
 public:
     Grid(unsigned int rows, unsigned int cols);
