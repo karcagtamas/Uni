@@ -5,10 +5,12 @@
 #include <vector>
 #include <sstream>
 
+#define FILE "/home/karcagtamas/repos/Uni/oop/hw/01/heores.csv"
+
 int main()
 {
     std::vector<Hero *> heroes;
-    std::ifstream myfile("/home/karcagtamas/repos/Uni/oop/hw/01/heores.csv");
+    std::ifstream myfile(FILE);
     srand(time(NULL));
 
     if (myfile.is_open())
@@ -36,7 +38,7 @@ int main()
 
     for (unsigned int i = 0; i < heroes.size(); i++)
     {
-        std::cout << i << ". player:" << std::endl;
+        std::cout << i + 1 << ". player:" << std::endl;
         heroes[i]->print();
     }
 
@@ -46,6 +48,11 @@ int main()
     std::cin >> first;
     std::cout << "Select 2. player: ";
     std::cin >> second;
+
+    if (first < 1 || second < 1 || first > heroes.size() || second > heroes.size())
+    {
+        return 1;
+    }
 
     heroes[first - 1]->hit(heroes[second - 1])->printAsWinner();
 

@@ -17,17 +17,11 @@ void Hero::print()
 Hero *Hero::hit(Hero *attacked)
 {
     const unsigned int damage = this->getDamage();
-    std::cout << this->name << " attack by " << damage << std::endl;
-    if (damage < attacked->hp)
-    {
-        attacked->hp -= damage;
-        return attacked->hit(this);
-    }
-    else
-    {
-        attacked->hp = 0;
-        return this;
-    }
+    const unsigned int dealedDamage = damage >= attacked->hp ? attacked->hp : damage;
+
+    attacked->hp -= dealedDamage;
+    std::cout << this->name << " caused " << dealedDamage << " to " << attacked->name << " Remaining HP: " << attacked->hp << std::endl;
+    return attacked->hp == 0 ? this : attacked->hit(this);
 }
 
 unsigned int Hero::getDamage()
