@@ -1,0 +1,5 @@
+- láncolt lista készítése
+- ember: knev, vnev, szul év, nem
+- A nem legyen enumeráció
+- 10 ember láncolt listában
+- kiir
