@@ -6,17 +6,17 @@
 class Grid
 {
 private:
-    unsigned int rows = 10;
-    unsigned int cols = 10;
+    const unsigned int rows = 10;
+    const unsigned int cols = 10;
     unsigned int round = 0;
     std::vector<std::vector<Cell>> grid;
 
-    void display();
+    void display() const;
     void simulate();
     void determineNextStatus();
     void commitNextStatus();
-    bool gridIsEmpty();
+    bool gridIsEmpty() const;
 
 public:
-    Grid(unsigned int rows, unsigned int cols);
+    Grid(const unsigned int rows, const unsigned int cols);
 };

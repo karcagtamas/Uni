@@ -30,14 +30,19 @@ void Grid::simulate()
     display();
     determineNextStatus();
     commitNextStatus();
-    if (!gridIsEmpty() || round < ROUND)
+    if (!gridIsEmpty() && round < ROUND)
     {
         usleep(LIMIT);
         simulate();
     }
+    else
+    {
+        system("clear");
+        std::cout << "Simulation is ended on round " << this->round << std::endl;
+    }
 }
 
-void Grid::display()
+void Grid::display() const
 {
     system("clear");
     std::cout << "Round: " << (round == 0 ? "Start" : std::to_string(round)) << std::endl;
@@ -45,7 +50,7 @@ void Grid::display()
     {
         for (unsigned int j = 0; j < cols; j++)
         {
-            std::cout << (grid[i][j].getStatus() == Dead ? " " : "*");
+            std::cout << grid[i][j].print();
         }
 
         std::cout << std::endl;
@@ -63,11 +68,13 @@ void Grid::determineNextStatus()
             {
                 for (int y = -1; y < 2; y++)
                 {
+                    const int cordX = i + x;
+                    const int cordY = j + y;
                     if (!(x == 0 && y == 0))
                     {
-                        if (i + x >= 0 && i + x < rows && j + y >= 0 && j + y < cols)
+                        if (cordX >= 0 && cordX < (int)rows && cordY >= 0 && cordY < (int)cols)
                         {
-                            cells.push_back(grid[i + x][j + y]);
+                            cells.push_back(grid[cordX][cordY]);
                         }
                     }
                 }
@@ -88,7 +95,7 @@ void Grid::commitNextStatus()
     }
 }
 
-bool Grid::gridIsEmpty()
+bool Grid::gridIsEmpty() const
 {
     unsigned int count = 0;
     for (unsigned int i = 0; i < rows; i++)
