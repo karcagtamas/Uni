@@ -5,6 +5,9 @@
 #include <cstdlib>
 #include <unistd.h>
 
+#define LIMIT 300000
+#define ROUND 1000
+
 Grid::Grid(unsigned int rows, unsigned int cols) : rows(rows), cols(cols)
 {
     srand(time(NULL));
@@ -18,7 +21,6 @@ Grid::Grid(unsigned int rows, unsigned int cols) : rows(rows), cols(cols)
         }
         grid.push_back(row);
     }
-    display();
     simulate();
 };
 
@@ -28,9 +30,9 @@ void Grid::simulate()
     display();
     determineNextStatus();
     commitNextStatus();
-    if (round < 1000)
+    if (!gridIsEmpty() || round < ROUND)
     {
-        usleep(300000);
+        usleep(LIMIT);
         simulate();
     }
 }
@@ -61,9 +63,12 @@ void Grid::determineNextStatus()
             {
                 for (int y = -1; y < 2; y++)
                 {
-                    if (x != 0 && y != 0 && i + x >= 0 && i + x < rows && j + y >= 0 && j + y < cols)
+                    if (!(x == 0 && y == 0))
                     {
-                        cells.push_back(grid[i + x][j + y]);
+                        if (i + x >= 0 && i + x < rows && j + y >= 0 && j + y < cols)
+                        {
+                            cells.push_back(grid[i + x][j + y]);
+                        }
                     }
                 }
             }
@@ -81,4 +86,20 @@ void Grid::commitNextStatus()
             grid[i][j].commit();
         }
     }
+}
+
+bool Grid::gridIsEmpty()
+{
+    unsigned int count = 0;
+    for (unsigned int i = 0; i < rows; i++)
+    {
+        for (unsigned int j = 0; j < cols; j++)
+        {
+            if (grid[i][j].getStatus() == Alive)
+            {
+                count++;
+            }
+        }
+    }
+    return count == 0;
 }

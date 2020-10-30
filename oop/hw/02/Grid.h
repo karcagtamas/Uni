@@ -15,6 +15,7 @@ private:
     void simulate();
     void determineNextStatus();
     void commitNextStatus();
+    bool gridIsEmpty();
 
 public:
     Grid(unsigned int rows, unsigned int cols);
