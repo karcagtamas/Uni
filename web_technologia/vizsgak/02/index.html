@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Szakdolgozat értékelő lap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Szakdolgozat értékelő lap</h1>
+    <form class="inputs">
+        <div class="data-row">
+            <label>
+                Szerző (jelölt):
+            </label>
+            <span class="spacer"></span>
+            <input class="szerzo-input" type="text" />
+        </div>
+        <div class="data-row">
+            <label>
+                Szak:
+            </label>
+            <span class="spacer"></span>
+            <input class="szak-input" type="text" list="szakok" />
+
+            <datalist id="szakok">
+                <option>Mérnök informatikus</option>
+                <option>Gazdasági informatikus</option>
+            </datalist>
+        </div>
+        <div class="data-row">
+            <label>
+                Képzési szint:
+            </label>
+            <span class="spacer">
+            </span>
+            <select class="szint-select">
+                <option>BSc</option>
+                <option>MSc</option>
+            </select>
+        </div>
+        <div class="data-row">
+            <label>
+                Szakdolgozat címe:
+            </label>
+            <span class="spacer">
+            </span>
+            <input class="cim-input" type="text" />
+        </div>
+        <div class="data-row">
+            <label>
+                Munkahelye:
+            </label>
+            <span class="spacer">
+            </span>
+            <input class="munkahely-input" type="text" />
+        </div>
+        <div class="data-row">
+            <label>
+                Munkahelye:
+            </label>
+            <span class="spacer">
+            </span>
+            <input class="beosztas-input" type="text" />
+        </div>
+        <ol>
+            <li>
+                Téma választás
+                <span class="right">
+                    <label>Pontszám: </label>
+                    <input id="p1" class="p" type="number" value="0" min="0" max="8" />
+                </span>
+                <textarea rows="5"></textarea>
+            </li>
+            <li>A dolgozat szerkezet, stílusa
+                <span class="right">
+                    <label>Pontszám: </label>
+                    <input id="p2" class="p" type="number" value="0" min="0" max="8" />
+                </span>
+                <textarea rows="5"></textarea>
+            </li>
+            <li>Szakirodalom feldolgozása
+                <span class="right">
+                    <label>Pontszám: </label>
+                    <input id="p3" class="p" type="number" value="0" min="0" max="10" />
+                </span>
+                <textarea rows="5"></textarea>
+            </li>
+            <li>A téma kidolgozásának színvonala
+                <span class="right">
+                    <label>Pontszám: </label>
+                    <input id="p4" class="p" type="number" value="0" min="0" max="20" />
+                </span>
+                <textarea rows="5"></textarea>
+            </li>
+            <li>A dolgozat gyakorlati vonatkozása
+                <span class="right">
+                    <label>Pontszám: </label>
+                    <input id="p5" class="p" type="number" value="0" min="0" max="7" />
+                </span>
+                <textarea rows="5"></textarea>
+            </li>
+        </ol>
+        <div>
+            Összpontszám: <span class="summary"></span>, érdemjegy: <span class="mark"></span>.
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jsunity-0.6.js"></script>
+<script src="script.js"></script>
+<script src="test.js"></script>
