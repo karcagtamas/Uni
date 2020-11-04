@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    width: 1cm;
+    height: 1cm;
+}
+
+th {
+    font-size: 8pt;
+}
+
+td {
+    background-color: gray;
+}
+
+.not-work-day {
+    background-color: blue;
+}
+
+.work-day {
+    background-color: red;
+}
+
+.work-day.selected {
+    background-color: green;
+}
+
+.result-div {
+    margin-top: 1rem;
+}
