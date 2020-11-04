@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ZH adminisztráció</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ZH adminisztráció</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Neptun</th>
+                <th>1. ZH</th>
+                <th>1. ZH pót</th>
+                <th>2. ZH</th>
+                <th>2. ZH pót</th>
+                <th>Összesen</th>
+                <th>Aláírás</th>
+                <th>Megajánlott</th>
+            </tr>
+        </thead>
+        <tbody class="data">
+            <tr class="sample-row">
+                <form>
+                    <td>
+                        <input class="input name-input" placeholder="Név" type="text" />
+                    </td>
+                    <td>
+                        <input class="input neptun-input" placeholder="Neptun" type="text" pattern="^[a-zA-Z0-9]{6}"
+                            maxlength="6" />
+                    </td>
+                    <td>
+                        <input class="input zh1-input" placeholder="1. ZH" type="number" step="1" min="0" max="7"
+                            pattern="[0-9]{,}" value="0" />
+                    </td>
+                    <td><input class="input zh1pot-input" placeholder="1. ZH pót" type="number" step="1" min="0" max="7"
+                            pattern="[0-9]{,}" value="0" /></td>
+                    <td><input class="input zh2-input" placeholder="2. ZH" type="number" step="1" min="0" max="7"
+                            pattern="[0-9]{,}" value="0" /></td>
+                    <td><input class="input zh2pot-input" placeholder="2. ZH pót" type="number" step="1" min="0" max="7"
+                            pattern="[0-9]{,}" value="0" /></td>
+                    <td>
+                        <span class="summary"></span>
+                    </td>
+                    <td><span class="signed"></span></td>
+                    <td><span class="mark"></span></td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="add()">
+        +
+    </button>
+</body>
+
+</html>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="script.js"></script>

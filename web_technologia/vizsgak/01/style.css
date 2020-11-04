@@ -1,0 +1,43 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 32pt;
+    color: blue;
+}
+
+input {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+table thead tr th, table tbody tr td {
+    text-align: center;
+    padding: 4px;
+}
+
+.mark {
+    color: red;
+}
+
+.mark::after {
+    content: "-";
+}
+
+.denied {
+    color: red;
+}
+
+.accepted, .good-mark {
+    color: green !important;
+    font-weight: bold;
+}
+
+.mark.good-mark::after {
+    content: "";
+}
+
+.sample-row {
+    display: none;
+}
