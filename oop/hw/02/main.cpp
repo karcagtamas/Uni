@@ -16,6 +16,7 @@ int main()
     std::cin >> cols;
 
     Grid grid(rows, cols);
+    grid.simulate();
 
     return 0;
 }

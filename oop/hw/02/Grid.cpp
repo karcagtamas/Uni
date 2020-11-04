@@ -21,7 +21,6 @@ Grid::Grid(unsigned int rows, unsigned int cols) : rows(rows), cols(cols)
         }
         grid.push_back(row);
     }
-    simulate();
 };
 
 void Grid::simulate()

@@ -12,11 +12,11 @@ private:
     std::vector<std::vector<Cell>> grid;
 
     void display() const;
-    void simulate();
     void determineNextStatus();
     void commitNextStatus();
     bool gridIsEmpty() const;
 
 public:
     Grid(const unsigned int rows, const unsigned int cols);
+    void simulate();
 };
