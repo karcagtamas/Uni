@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Vizsgaeredmények rögzítése</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Vizsgaeredmények rögzítése</h1>
+    <table>
+        <tr class="header">
+            <th>SSz.</th>
+            <th>Név</th>
+            <th>Neptun</th>
+            <th>Eredmény</th>
+        </tr>
+        <tr class="sample-row">
+            <td><span class="cc">0</span>.</td>
+            <td><input class="name" /></td>
+            <td><input class="neptun" maxlength="6" /></td>
+            <td>
+                <select class="result">
+                    <option value="0">Nem jelent meg</option>
+                    <option value="1">Elégtelen (1)</option>
+                    <option value="2">Elégséges (2)</option>
+                    <option value="3">Közepes (3)</option>
+                    <option value="4">Jó (4)</option>
+                    <option value="5">Jeles (5)</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="row">
+            <td><span class="cc">1</span>.</td>
+            <td><input class="name" value="Jimmie Dimmick" /></td>
+            <td><input class="neptun" maxlength="6" value="WER987" /></td>
+            <td>
+                <select class="result">
+                    <option value="0">Nem jelent meg</option>
+                    <option value="1">Elégtelen (1)</option>
+                    <option value="2">Elégséges (2)</option>
+                    <option value="3" selected>Közepes (3)</option>
+                    <option value="4">Jó (4)</option>
+                    <option value="5">Jeles (5)</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="row">
+            <td><span class="cc">2</span>.</td>
+            <td><input class="name" value="Mia Wallace" /></td>
+            <td><input class="neptun" maxlength="6" value="WER987" /></td>
+            <td>
+                <select class="result">
+                    <option value="0">Nem jelent meg</option>
+                    <option value="1">Elégtelen (1)</option>
+                    <option value="2">Elégséges (2)</option>
+                    <option value="3">Közepes (3)</option>
+                    <option value="4">Jó (4)</option>
+                    <option value="5">Jeles (5)</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button>+</button> Az átlag: <span class="avg">3.00</span>
+</body>
+
+</html>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
