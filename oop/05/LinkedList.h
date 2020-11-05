@@ -9,7 +9,7 @@ private:
     Node<T> *root;
 
 public:
-    void add();
+    void add(T element);
     void remove();
     Node<T> *get();
 };
