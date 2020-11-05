@@ -1,0 +1,17 @@
+h1 {
+    font-family: Arial;
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+    font-size: 24pt;
+
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+.res {
+    border: 1px dashed black;
+    padding: 0.5cm;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Óraállások rögzítése</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>km-számlálók állásának rögzítése</h1>
+    <form>
+        <label>
+            Rendszám: <input id="rendszam" type="text" maxlength="6" pattern="[A-Za-z]{3}[0-9]{3}" autocomplete="off"
+                list="list" required />
+        </label>
+        <datalist id="list">
+
+        </datalist>
+        <br />
+        <label>
+            Leolvasás dátuma: <input id="date" type="date" required />
+        </label>
+        <br />
+        <label>
+            Óraállás: <input id="status" type="number" min="0" required />
+        </label>
+        <br />
+        <button type="submit">Mentés</button>
+    </form>
+    <div class="res">
+        <h2>A jármű eddig rögzített km-óra állásai:</h2>
+        <ol>
+        </ol>
+    </div>
+</body>
+
+</html>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
