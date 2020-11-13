@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <title>Memóriajáték</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memóriajáték</h1>
+    <details>
+      <summary>Játékszabályok</summary>
+      Kattintson egymás után két kártyára, hogy megfordíthassa őket! Ha nem
+      egyformák, két másodperc múlva visszafordulnak. Próbálja minél kevesebb
+      fordítással megtalálni minden kártya párját! (További részletek a
+      memóriajátékokról a
+      <a
+        href="https://hu.wikipedia.org/wiki/Mem%C3%B3riaj%C3%A1t%C3%A9k"
+        target="_blank"
+        >Wikipédián</a
+      >.)
+    </details>
+
+    <div class="cards">
+      <img id="p1" src="web.png" height="128px" width="128px" />
+      <img id="p2" src="web.png" height="128px" width="128px" />
+      <img id="p3" src="web.png" height="128px" width="128px" />
+      <img id="p4" src="web.png" height="128px" width="128px" />
+      <img id="p5" src="web.png" height="128px" width="128px" />
+      <img id="p6" src="web.png" height="128px" width="128px" />
+    </div>
+    <p class="info">
+      Kattintson az első kártya hátlapjára a megfordításához! szöveget
+      tartalmazza!
+    </p>
+  </body>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</html>

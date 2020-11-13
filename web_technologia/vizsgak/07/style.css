@@ -1,0 +1,24 @@
+.cards {
+  margin-top: 1cm;
+  text-align: left;
+  float: left;
+}
+
+.cards img {
+  border: 3px white inset;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.cards img.selected {
+  border: 1px solid blue;
+}
+
+.cards img.correct {
+  border: 1px solid orange;
+}
+
+.info {
+  margin-top: 1cm;
+  clear: left;
+}
