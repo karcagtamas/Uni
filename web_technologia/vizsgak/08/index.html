@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lights out</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      <a
+        href="https://hu.wikipedia.org/wiki/Lights_Out_(j%C3%A1t%C3%A9k)"
+        target="_blank"
+        >Lights out</a
+      >
+    </h1>
+    <ul>
+      <li>
+        A <em>Lights Out</em> egyszemályes, elektronikus absztrakt táblás játék.
+        Az 5x5-ös méretű tábla egyes mezőiben lámpák világítanak. A játékos
+        feladatezekem inél kevesebb próbálkozással történő lekapcsolása.
+      </li>
+      <li>
+        Ha a játékos egy mezőre kattint, az ott lévő, valamint a felette,
+        alatta, tőle balra és jobbra lévő lámpák (a tábla szélén persze ezek
+        közül nem létezik mindegyik) állapota a jellengivel ellentétesre
+        változik.
+      </li>
+    </ul>
+    <table>
+      <tr>
+        <td id="0" title="Lámpa lekapcsolva."><img /></td>
+        <td id="1" title="Lámpa lekapcsolva."><img /></td>
+        <td id="2" title="Lámpa lekapcsolva."><img /></td>
+        <td id="3" title="Lámpa lekapcsolva."><img /></td>
+        <td id="4" title="Lámpa lekapcsolva."><img /></td>
+      </tr>
+      <tr>
+        <td id="5" title="Lámpa lekapcsolva."><img /></td>
+        <td id="6" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="7" title="Lámpa lekapcsolva."><img /></td>
+        <td id="8" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="9" title="Lámpa lekapcsolva."><img /></td>
+      </tr>
+      <tr>
+        <td id="10" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="11" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="12" title="Lámpa lekapcsolva."><img /></td>
+        <td id="13" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="14" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+      </tr>
+      <tr>
+        <td id="15" title="Lámpa lekapcsolva."><img /></td>
+        <td id="16" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="17" title="Lámpa lekapcsolva."><img /></td>
+        <td id="18" title="Lámpa lekapcsolva."><img /></td>
+        <td id="19" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+      </tr>
+      <tr>
+        <td id="20" title="Lámpa lekapcsolva."><img /></td>
+        <td id="21" title="Lámpa lekapcsolva."><img /></td>
+        <td id="22" title="Lámpa felkapcsolva.">
+          <img alt="izzó" src="bulb.svg" />
+        </td>
+        <td id="23" title="Lámpa lekapcsolva."><img /></td>
+        <td id="24" title="Lámpa lekapcsolva."><img /></td>
+      </tr>
+    </table>
+  </body>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</html>
