@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="vasút, menetrend, vonta, járat" />
+    <title>Menetrend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Vasúti járatkereső</h1>
+      <section id="ut">
+        <h2>Utazási adatok</h2>
+        <p>
+          Adja meg, hogy honnan és hová szeretne utazni, majd nyomja meg a
+          <em>Keresés</em> gombot! Az oldal kilistázza az összes olya járatot,
+          amivvel eljuthat a kívánt helyre.
+        </p>
+        <form>
+          <label>Honnan: </label>
+          <select id="from"></select>
+          <br />
+          <label>Hova: </label>
+          <select id="to"></select>
+          <br />
+          <button type="submit">Keresés</button>
+        </form>
+      </section>
+    </article>
+  </body>
+  <noscript> A böngésző nem támogatja a javascriptet </noscript>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="vonat.js"></script>
+  <script src="script.js"></script>
+</html>
