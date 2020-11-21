@@ -1,0 +1,13 @@
+﻿[Label1]
+Coordinates=79,10,53,58
+
+[Alma]
+Coordinates=142,10,44,36
+Visible=True
+
+[Button1]
+Coordinates=10,10,59,58
+
+[]
+Coordinates=150,1,91,36
+
