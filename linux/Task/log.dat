@@ -1,0 +1,31 @@
+ERROR - Invalid operation - not valid event
+ERROR - Invalid operation - not valid event
+
+ERROR - 2020. ápr. 29., szerda, 15:47:01 CEST - Invalid operation - not valid event
+ERROR - 2020. ápr. 29., szerda, 15:48:50 CEST - You does not have enough parameter
+ERROR - 2020. ápr. 29., szerda, 15:49:10 CEST - Invalid directory path
+ERROR - 2020. ápr. 29., szerda, 15:57:39 CEST - Invalid operation - not valid event
+ERROR - 2020. ápr. 30., csütörtök, 19:01:28 CEST - You does not have enough parameter
+ERROR - 2020. máj. 1., péntek, 14:37:42 CEST - You does not have enough parameter
+ERROR - 2020. máj. 1., péntek, 15:10:41 CEST - You does not have enough parameter
+ERROR - 2020. máj. 1., péntek, 15:10:53 CEST - You does not have enough parameter
+ERROR - 2020. máj. 1., péntek, 15:10:55 CEST - You does not have enough parameter
+ERROR - 2020. máj. 1., péntek, 15:13:21 CEST - Invalid operation - extension command does not exists
+ERROR - 2020. máj. 1., péntek, 15:18:59 CEST - Invalid operation - invalid value parameter for extension adding
+ERROR - 2020. máj. 1., péntek, 15:24:14 CEST - Value java already exists in the extension list
+ERROR - 2020. máj. 1., péntek, 15:24:23 CEST - Value 'java' already exists in the extension list
+ERROR - 2020. máj. 1., péntek, 15:28:57 CEST - Value 'py' does not exist in the extension list
+ERROR - 2020. máj. 2., szombat, 20:08:49 CEST - Value 'py' already exists in the extension list
+ERROR - 2020. máj. 2., szombat, 20:10:55 CEST - Value 'py' does not exist in the extension list
+ERROR - 2020. máj. 2., szombat, 20:29:54 CEST - Value 'py' does not exist in the extension list
+ERROR - 2020. máj. 2., szombat, 21:43:33 CEST - Value 'src' already exists in the ignore list
+ERROR - 2020. máj. 2., szombat, 21:43:54 CEST - Value 'src' already exists in the ignore list
+ERROR - 2020. máj. 2., szombat, 22:12:54 CEST - Value 'srcd asd' already exists in the ignore list
+ERROR - 2020. máj. 2., szombat, 22:15:43 CEST - Value 'srcd asd' does not exist in the extension list
+ERROR - 2020. máj. 2., szombat, 22:17:09 CEST - Value 'srcd asd' already exists in the ignore list
+ERROR - 2020. máj. 2., szombat, 22:17:33 CEST - Value 'srcd asd' already exists in the ignore list
+ERROR - 2020. máj. 2., szombat, 22:24:12 CEST - Value 'srcd asd' does not exist in the extension list
+ERROR - 2020. máj. 3., vasárnap, 09:33:58 CEST - Value 'asd' already exists in the extension list
+ERROR - 2020. máj. 3., vasárnap, 09:34:30 CEST - Invalid value - invalid value for extension adding
+ERROR - 2020. máj. 3., vasárnap, 09:35:53 CEST - Invalid value - invalid value for extension adding
+ERROR - 2020. máj. 3., vasárnap, 10:11:26 CEST - You does not have enough parameter

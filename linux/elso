@@ -1,0 +1,6 @@
+#! /usr/bin/bash
+
+# First program
+date
+whoami
+cat elso
