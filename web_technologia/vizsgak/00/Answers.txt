@@ -1,0 +1,18 @@
+1.
+1 pixel = 1 fizikai képpont, viszont nagy felbontású eszközön, aminek a felbontása nagyobb mint 96dpi, ott ez a szám nagyobb
+
+2.
+- Klasszikus:
+    Elönyök: Egyszerű, könnyen használható, minden böngésző támogatja
+    Hátrányok: Csak egy eseményekezelő hozzáadása lehetsége (uj felül irja az elözőt)
+- W3C:
+    Elönyök: Több eseménykezelő hozzáadása lehetséges, rugalmas, logikus
+    Hátrányok: Régebbi böngészők nem támogatják
+- Soron belüli:
+    Elönyök: Könnyen használható, gyors (azonnal a HTML irása közben)
+    Hátrányok: A JS kód szétszorva helyezkedik el a kódban és a fokozatos fejlődés elve  nem valósítható meg
+
+3.
+- Hexadecimális kód: #FF124B (RGB összetevők)
+- Kulcs szavakkal: red, black, green, white lightyellow
+- Függvényekkel: rgb(120, 255, 190), rgba(120, 255, 190, 0.7), hsl(270, 70%, 40%), hsla(270, 70%, 40%, 0.4)

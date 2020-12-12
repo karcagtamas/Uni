@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vizsgák</title>
+  </head>
+  <body>
+    <h1>
+      <img src="sze_logo.png" alt="SZE logó" />
+      Az egyes oktatók által adott tárgyból levizsgáztatott hallgatók száma
+    </h1>
+    <table>
+      <tr>
+        <td colspan="2" rowspan="2"></td>
+        <th colspan="3">Tárgyak</th>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://uni.sze.hu/files/targytematika/GKNB_INTM049/2020_21_1_GKNB_INTM049_0.pdf"
+            target="_blank"
+            >Web</a
+          >
+        </td>
+        <td>Programozás</td>
+        <td>Adatbázis</td>
+      </tr>
+      <tr class="data">
+        <th rowspan="2" title="Tanszék oktatói">Oktatók</th>
+        <td class="oktato">Oktató Olivér</td>
+        <td><input type="number" min="0" /></td>
+        <td><input type="number" min="0" /></td>
+        <td><input type="number" min="0" /></td>
+        <td class="row-result">0</td>
+      </tr>
+      <tr class="data">
+        <td class="oktato">Professzor Pali</td>
+        <td><input type="number" min="0" /></td>
+        <td><input type="number" min="0" /></td>
+        <td><input type="number" min="0" /></td>
+        <td class="row-result">0</td>
+      </tr>
+      <tr id="result-row">
+        <td></td>
+        <td></td>
+        <td class="col-result">0</td>
+        <td class="col-result">0</td>
+        <td class="col-result">0</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <noscript> Ennek az oldalnak a működéséhez JavaScript szükséges. </noscript>
+    <script src="script.js"></script>
+  </body>
+</html>
