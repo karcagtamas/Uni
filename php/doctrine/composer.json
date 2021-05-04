@@ -1,0 +1,7 @@
+{
+  "name": "karcags/doctrine_test",
+  "description": "doctrine-test",
+  "require": {
+    "doctrine/orm": "*"
+  }
+}
